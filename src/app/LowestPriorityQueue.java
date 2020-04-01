@@ -89,6 +89,7 @@ public class LowestPriorityQueue {
      * Moves element as far down the queue as possible, giving precedence to the left side
      * @param index
      */
+    //TODO check both children and swap with lower priority
     private void updatePriorityDownward(int index) {
         int leftChild, rightChild = 9999;
         if ((leftChild = getLeftChildIndex(index)) != -1 && this.queue[index].hasPriority(this.queue[leftChild])) {
