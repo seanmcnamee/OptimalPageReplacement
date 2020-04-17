@@ -1,5 +1,4 @@
 package app;
-
 import java.util.Scanner;
 
 public class MyMemoryRunner {
@@ -8,7 +7,9 @@ public class MyMemoryRunner {
         String framesPrompt = "Enter the # of frames:\n\t";
         String simulatingOptimal = "\nRunning Optimal Replacement Simulation:\n";
         String simulatingLRU = "\nRunning LRU Replacement Simulation:\n";
-        String inputError = "There was an error with you input. \nThe reference string should be single space seperated. Ex: '8 6 7 5 3 0 9' \nThe number of frames should be an integer.\nTry again.\n\n";
+        String inputError = "There was an error with you input. " +
+                            "\nThe reference string should be single space seperated. Ex: '8 6 7 5 3 0 9' " + 
+                            "\nThe number of frames should be an integer.\nTry again.\n\n";
         PageReplacement optimal;
         PageReplacement leastRecentlyUsed;
         
